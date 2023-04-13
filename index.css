@@ -1,0 +1,178 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+/* GLOBAL SETTINGS */
+body {
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+/* Header */
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    height: 69px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    z-index: 1;
+}
+
+body:not(header) {
+    padding-top: 69px;
+}
+
+
+#logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    flex-basis: 50%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: end;
+}
+
+nav ul {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: seashell;
+    text-decoration: underline;
+}
+
+/* MISSION BANNER */
+#mission {
+    /* position:relative;
+    top: 69px; */
+    background-image: url(./img/img-mission-background.jpg);
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#statement {
+    background-color: black;
+    width: 100%;
+    line-height: 1em;
+}
+
+#statement h2 {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#statement h4 {
+    padding-bottom: 10px;
+}
+
+/* MONTHLY TEA */
+#monthly-tea {
+    position: relative;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+#monthly-tea h2 {
+    padding: 30px 0 10px 0;
+}
+
+#monthly-tea h4 {
+    padding-bottom: 10px;
+}
+
+#flex-teas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;    
+}
+
+figure.thumbnails img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.thumbnails {
+    padding: 10px;
+}
+
+/* LOCATIONS */
+#locations {
+    background-image: url(./img/img-locations-background.jpg);
+    height: 600px;
+    width: 1200px;
+    margin: auto;
+}
+
+#locations h2 {
+    padding-top: 75px;
+    padding-bottom: 15px;
+}
+
+#flex-locations {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+    padding: 20px
+}
+
+.location h3 {
+    padding-bottom: 10px;
+}
+
+/* FOOTER */
+#contact {
+    height: 200px;
+    vertical-align: middle;
+}
+
+#contact h2{
+    margin-top: 10px;
+    margin-bottom: 0.7em;
+}
+ 
+#contact h5:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+#copyright  h5 {
+    text-align: left;
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
